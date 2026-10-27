@@ -1,0 +1,123 @@
+Grupo G05 | seed 5014 | id_instancia da6b429055d1 | integridade OK | SKUs 24 | semanas 12
+
+[A] Monte Carlo: 2000 cenários de construção (0.29s, 27788 KiB)
+
+Calibração do peso do caixa antecipado (cenários de construção):
+ lambda  P_pagar_todas     folga_P  caixa_operacional_medio
+   0.00            1.0 137711.3060              468944.4841
+   0.10            1.0 147819.6422              468580.2985
+   0.25            1.0 147346.7641              468553.6863
+   0.50            1.0 152348.7406              465879.2247
+   1.00            1.0 154495.8949              462197.8318
+
+[B] DP com lambda = 1.0 — trajetória de preços (nível por semana, demanda esperada):
+semana        1         2         3         4         5         6         7         8         9         10        11        12
+sku                                                                                                                           
+Q2-001      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12  SUSPENSO      1.12      1.12
+Q2-002      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12  SUSPENSO  SUSPENSO      1.12      1.12
+Q2-003      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12
+Q2-004      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.06      1.06
+Q2-005      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12
+Q2-006      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12  SUSPENSO      1.12      1.12
+Q2-007      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12
+Q2-008      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12
+Q2-009      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      0.82      0.82      0.82      0.82
+Q2-010      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12       1.0       1.0       1.0       1.0
+Q2-011      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12
+Q2-012      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12
+Q2-013      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12  SUSPENSO      1.12      1.12
+Q2-014  SUSPENSO  SUSPENSO  SUSPENSO  SUSPENSO  SUSPENSO  SUSPENSO  SUSPENSO  SUSPENSO  SUSPENSO  SUSPENSO  SUSPENSO  SUSPENSO
+Q2-015      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12  SUSPENSO  SUSPENSO      1.12       1.0
+Q2-016      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12  SUSPENSO  SUSPENSO      1.12      1.06
+Q2-017      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12
+Q2-018      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12  SUSPENSO  SUSPENSO      1.12      1.12
+Q2-019      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12
+Q2-020      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12  SUSPENSO  SUSPENSO      1.12      1.12
+Q2-021      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12
+Q2-022      1.12       1.0       1.0      1.12      1.06       1.0       1.0      1.12       1.0      1.06      1.06      1.06
+Q2-023      1.12      1.12      1.12      1.12      1.12      1.12      1.12      1.12      0.88      0.88      0.88      0.88
+Q2-024  SUSPENSO  SUSPENSO  SUSPENSO  SUSPENSO  SUSPENSO  SUSPENSO  SUSPENSO  SUSPENSO  SUSPENSO  SUSPENSO  SUSPENSO  SUSPENSO
+
+[C] Greedy: 60 ações promocionais em 12 semanas
+ semana  acoes  gasto_esperado  orcamento
+      1      5         1017.44    4213.76
+      2      5         1050.08    4213.76
+      3      5         1049.56    4213.76
+      4      5         1018.06    4213.76
+      5      5          754.63    4213.76
+      6      5          767.77    4213.76
+      7      5          770.09    4213.76
+      8      5          737.66    4213.76
+      9      5          696.33    4213.76
+     10      5          675.10    4213.76
+     11      5          681.73    4213.76
+     12      5          562.87    4213.76
+
+[D] Validação em 5000 cenários independentes:
+                            Preço fixo 1,00            DP   DP + Greedy
+P_pagar_semana_4               1.000000e+00  1.000000e+00  1.000000e+00
+P_pagar_semana_8               1.000000e+00  1.000000e+00  1.000000e+00
+P_pagar_semana_12              1.000000e+00  1.000000e+00  1.000000e+00
+P_pagar_todas                  1.000000e+00  1.000000e+00  1.000000e+00
+P_falha                        0.000000e+00  0.000000e+00  0.000000e+00
+caixa_operacional_medio        2.988506e+05  4.602754e+05  4.625066e+05
+caixa_operacional_P5           2.881295e+05  4.474318e+05  4.498857e+05
+saldo_final_medio              9.522973e+04  2.566546e+05  2.588857e+05
+saldo_final_P5                 8.450863e+04  2.438109e+05  2.462648e+05
+folga_minima_nos_prazos_P5     8.444211e+04  1.454704e+05  1.550578e+05
+margem_caixa_sobre_receita     1.698000e-01  2.478000e-01  2.440000e-01
+receita_media                  1.760245e+06  1.857470e+06  1.895625e+06
+gasto_promocional_medio        0.000000e+00  0.000000e+00  9.595015e+03
+estoque_final_medio            7.240040e+02  1.004869e+03  9.469822e+02
+estoque_inicial                4.165000e+03  4.165000e+03  4.165000e+03
+
+Reutilização de subproblemas (instância reduzida): {"sku": "Q2-004", "semanas": 4, "estoque": 12, "valor_bottom_up": 1772.0011454523542, "valor_top_down_memo": 1772.0011454523526, "estados_unicos_calculados": 50, "consultas_a_subproblemas": 696, "chamadas_sem_memoizacao": 129543, "reutilizacao_media_por_estado": 13.92}
+
+Estresse de dívidas (probabilidade de pagar todas):
+ fator_dividas  P_todas_preco_fixo  P_todas_dp_greedy  P_semana_4_dp_greedy  P_semana_8_dp_greedy  P_semana_12_dp_greedy
+           1.0               1.000             1.0000                   1.0                   1.0                 1.0000
+           1.4               0.667             1.0000                   1.0                   1.0                 1.0000
+           1.8               0.000             1.0000                   1.0                   1.0                 1.0000
+           2.0               0.000             1.0000                   1.0                   1.0                 1.0000
+           2.1               0.000             0.7225                   1.0                   1.0                 0.7225
+           2.2               0.000             0.0100                   1.0                   1.0                 0.0100
+           2.4               0.000             0.0000                   1.0                   1.0                 0.0000
+
+Desempenho por tamanho de entrada:
+                       etapa         tamanho  tempo_s  memoria_pico_KiB
+     Monte Carlo (estimação)  J=8, S_max=474   0.0884         9547.8438
+        Programação Dinâmica  J=8, S_max=474   0.0531          902.5127
+              Greedy semanal  J=8, S_max=474   0.0145           24.9766
+Monte Carlo (validação 5000)  J=8, S_max=474   0.0584        16720.5703
+     Monte Carlo (estimação) J=24, S_max=474   0.2981        27785.3438
+        Programação Dinâmica J=24, S_max=474   0.1462         2399.6748
+              Greedy semanal J=24, S_max=474   0.0370           40.2266
+Monte Carlo (validação 5000) J=24, S_max=474   0.1633        47345.5234
+     Monte Carlo (estimação) J=48, S_max=948   0.5963        70075.0625
+        Programação Dinâmica J=48, S_max=948   0.3677         9239.3936
+              Greedy semanal J=48, S_max=948   0.0748           63.9062
+Monte Carlo (validação 5000) J=48, S_max=948   0.3350        93283.0234
+     Monte Carlo (estimação) J=96, S_max=948   1.1373       139723.8125
+        Programação Dinâmica J=96, S_max=948   0.7072        18168.0938
+              Greedy semanal J=96, S_max=948   0.1446           94.2266
+Monte Carlo (validação 5000) J=96, S_max=948   0.6574       185158.0234
+
+=== RESULTADO FINAL — QUESTÃO 2 (DP + Greedy, validação) ===
+  lambda: 1.0
+  caixa_inicial: 27285.86
+  dentro_do_limite_de_risco: True
+  n_cenarios_falha: 0
+  P_pagar_semana_4: 1.0
+  P_pagar_semana_8: 1.0
+  P_pagar_semana_12: 1.0
+  P_pagar_todas: 1.0
+  P_falha: 0.0
+  caixa_operacional_medio: 462506.561836482
+  caixa_operacional_P5: 449885.6846180798
+  saldo_final_medio: 258885.71183648196
+  saldo_final_P5: 246264.83461807977
+  folga_minima_nos_prazos_P5: 155057.80419734915
+  margem_caixa_sobre_receita: 0.24398625658379963
+  gasto_promocional_medio: 9595.014881000001
+  estoque_final_medio: 946.9822
+  estoque_inicial: 4165

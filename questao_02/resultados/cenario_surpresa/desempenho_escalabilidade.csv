@@ -1,0 +1,9 @@
+etapa,tamanho,tempo_s,memoria_pico_KiB
+Monte Carlo (estimação),"J=8, S_max=474",0.10211739999067504,9547.84375
+Programação Dinâmica,"J=8, S_max=474",0.05812060000607744,902.462890625
+Greedy semanal,"J=8, S_max=474",0.016469200010760687,24.9765625
+Monte Carlo (validação 5000),"J=8, S_max=474",0.06047019999823533,16720.5703125
+Monte Carlo (estimação),"J=24, S_max=474",0.2950591999979224,27785.34375
+Programação Dinâmica,"J=24, S_max=474",0.14964499999769032,2399.724609375
+Greedy semanal,"J=24, S_max=474",0.041439900000113994,40.578125
+Monte Carlo (validação 5000),"J=24, S_max=474",0.16374679999717046,47345.5234375

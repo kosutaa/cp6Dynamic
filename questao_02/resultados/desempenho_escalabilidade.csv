@@ -1,0 +1,17 @@
+etapa,tamanho,tempo_s,memoria_pico_KiB
+Monte Carlo (estimação),"J=8, S_max=474",0.08843429999251384,9547.84375
+Programação Dinâmica,"J=8, S_max=474",0.053067899993038736,902.5126953125
+Greedy semanal,"J=8, S_max=474",0.014475799995125271,24.9765625
+Monte Carlo (validação 5000),"J=8, S_max=474",0.05836270000145305,16720.5703125
+Monte Carlo (estimação),"J=24, S_max=474",0.2981190999998944,27785.34375
+Programação Dinâmica,"J=24, S_max=474",0.14615489999414422,2399.6748046875
+Greedy semanal,"J=24, S_max=474",0.03703600000881124,40.2265625
+Monte Carlo (validação 5000),"J=24, S_max=474",0.16334489999280777,47345.5234375
+Monte Carlo (estimação),"J=48, S_max=948",0.5963474999880418,70075.0625
+Programação Dinâmica,"J=48, S_max=948",0.36774940000032075,9239.3935546875
+Greedy semanal,"J=48, S_max=948",0.074761199997738,63.90625
+Monte Carlo (validação 5000),"J=48, S_max=948",0.33496809999633115,93283.0234375
+Monte Carlo (estimação),"J=96, S_max=948",1.1372868999897037,139723.8125
+Programação Dinâmica,"J=96, S_max=948",0.7071797999960836,18168.09375
+Greedy semanal,"J=96, S_max=948",0.1445704000070691,94.2265625
+Monte Carlo (validação 5000),"J=96, S_max=948",0.6573885999969207,185158.0234375

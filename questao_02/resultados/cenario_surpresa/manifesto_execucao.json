@@ -1,0 +1,20 @@
+{
+  "grupo": "G05",
+  "seed": 5014,
+  "n_skus": 24,
+  "semanas": 12,
+  "dividas": {
+    "4": 55417.61,
+    "8": 71581.08,
+    "12": 103908.02
+  },
+  "caixa_inicial": 27285.86,
+  "id_instancia": "da6b429055d1",
+  "hashes_dataset": {
+    "q1_catalogo_G05.csv": "72d428f81a8768fab9d4b8f19135d729d7b9f723543b111307845e91e42b66e0",
+    "q1_config_G05.json": "8f3fde0acddc49978876bb7f8edad036b4bed27fe064b1f09d5406eafe38ba7e",
+    "q2_catalogo_G05.csv": "068c83b1970cdd0c16968dcab4bf98c73aa436f64656c65d3bfe57c8cb7baab2",
+    "q2_config_G05.json": "70e5acc49945ca79619612712971b7aa6bf6b353696a6c5545c58ce999daf749"
+  },
+  "integridade_ok": true
+}

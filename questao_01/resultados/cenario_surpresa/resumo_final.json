@@ -1,0 +1,52 @@
+{
+  "grupo": "G05",
+  "seed": 5014,
+  "id_instancia": "da6b429055d1",
+  "integridade_ok": true,
+  "parametros": {
+    "fator_capacidade": 1.0,
+    "frac_max_desconto": 0.2,
+    "ajuste_meta": 1.1,
+    "ajuste_orcamento": 0.75,
+    "ajuste_custo_logistico": 1.15,
+    "skus_removidos": [
+      "Q1-005"
+    ]
+  },
+  "config_ga_escolhida": {
+    "populacao": 80,
+    "max_geracoes": 400,
+    "paciencia": 80,
+    "pc": 0.9,
+    "pm": null,
+    "torneio": 3,
+    "elite": 2,
+    "seed": 5014,
+    "avaliacao": "vetorizada"
+  },
+  "n_skus": 29,
+  "caixa_politica_atual_preco_1_00": 470531.24,
+  "caixa_apos_ga": 590503.8,
+  "caixa_final_apos_greedy": 585634.09,
+  "objetivo_apos_ga": 460210.64,
+  "objetivo_final_apos_greedy": 464809.87,
+  "custo_estoque_parado_final": 120824.22,
+  "margem_caixa_sobre_receita": 0.2487,
+  "receita_final": 2354343.91,
+  "estoque_inicial": 5563,
+  "estoque_remanescente": 1055,
+  "unidades_vendidas": 4508,
+  "capacidade_unidades": 4669.0,
+  "skus_com_desconto": 2,
+  "max_skus_desconto": 5,
+  "skus_suspensos": 1,
+  "meta_caixa_90d": 504078.19,
+  "meta_atingida": true,
+  "folga_meta": 81555.9,
+  "divida_total_90d": 411737.16,
+  "cobertura_divida": 1.4223,
+  "orcamento_promocional": 83891.28,
+  "orcamento_usado": 25134.2,
+  "uso_orcamento_percentual": 29.96,
+  "gap_medio_ga_b_subconjunto_percentual": 0.0
+}

@@ -1,0 +1,69 @@
+Grupo G05 | seed 5014 | id_instancia da6b429055d1 | integridade OK | SKUs 29
+
+[A/B] Brute Force vs GA no subconjunto (7 SKUs: Q1-007, Q1-019, Q1-013, Q1-017, Q1-018, Q1-027, Q1-025)
+     metodo seed   objetivo      caixa  gap_percentual  avaliacoes  tempo_s  memoria_pico_KiB
+Brute Force    - 193095.343 220427.606             0.0      245760    7.048             3.789
+GA config A 5014 193095.343 220427.606             0.0        2880    0.020            28.155
+GA config A 5015 193095.343 220427.606             0.0        3120    0.021            26.745
+GA config A 5016 193095.343 220427.606             0.0        2220    0.015            22.612
+GA config A 5017 193095.343 220427.606             0.0        2250    0.014            22.659
+GA config A 5018 193095.343 220427.606             0.0        1980    0.014            22.237
+GA config B 5014 193095.343 220427.606             0.0        6960    0.018            47.322
+GA config B 5015 193095.343 220427.606             0.0        7280    0.019            47.510
+GA config B 5016 193095.343 220427.606             0.0        7600    0.022            47.947
+GA config B 5017 193095.343 220427.606             0.0        7120    0.022            47.416
+GA config B 5018 193095.343 220427.606             0.0        7520    0.023            47.900
+
+[B] Configurações do GA no catálogo completo (resumo)
+          objetivo                           caixa                       geracoes              tempo_s               memoria_pico_KiB                
+              mean     std         max        mean       std         max     mean     std  max    mean    std    max             mean    std      max
+config                                                                                                                                               
+A       460183.372  60.981  460210.643  591146.011  1436.036  593714.870    144.8  18.674  168   0.032  0.004  0.036           67.001  0.925   68.405
+B       460210.643   0.000  460210.643  590503.796     0.000  590503.796    134.2   4.324  139   0.039  0.002  0.041          151.933  0.326  152.221
+
+[C] Greedy — SKUs que receberam incentivo (antes/depois)
+   sku  preco_ga             incentivo  unidades_antes  unidades_depois  caixa_antes  caixa_depois  investimento  estoque_rem_depois
+Q1-004    319.99 frete_subsidiado 100%             158              175     23386.98      23142.16       2761.15                 199
+Q1-008    114.29 frete_subsidiado 100%             283              347     12420.89      11997.55       3232.30                  72
+Q1-010   1798.39  frete_subsidiado 50%              73               75     27911.17      27609.81       1066.05                  14
+Q1-012    779.79           cashback 3%              52               54     12617.68      12408.18        694.79                  40
+Q1-015    358.49           cashback 3%             204              212     27974.25      27817.28       1254.00                   0
+Q1-017   1253.89  frete_subsidiado 50%              31               33      5229.09       4775.95        790.50                  36
+Q1-022    205.59           cashback 3%             209              220     12581.85      12497.76        746.29                   3
+Q1-024   1790.69           cashback 3%              99              105     16171.41      14049.12       3102.37                  36
+Q1-025    214.10 frete_subsidiado 100%             346              439     30482.96      30305.94       8370.41                  26
+Q1-027    715.41           cashback 3%             253              264     55640.11      54942.92       3116.33                   0
+
+Otimização demonstrada (avaliação de fitness):
+avaliacao_fitness  geracoes  tempo_s  fitness_final  speedup
+             laco       150   0.6672    460210.6429   1.0000
+       vetorizada       150   0.0159    460210.6429  41.9112
+
+Desempenho (tempo e memória por tamanho de entrada):
+       algoritmo  n_skus  trabalho  tempo_s  memoria_pico_KiB
+     Brute Force       4       640   0.0124            2.3359
+     Brute Force       5      3840   0.0871            2.3906
+GA (G=200, P=80)      29     16000   0.0579          154.0410
+          Greedy      29        14   0.0045           27.8252
+GA (G=200, P=80)      59     16000   0.0674          291.4082
+          Greedy      59        28   0.0038           51.0889
+
+=== RESULTADO FINAL — QUESTÃO 1 ===
+  caixa_politica_atual_preco_1_00: 470531.24
+  caixa_apos_ga: 590503.8
+  caixa_final_apos_greedy: 585634.09
+  objetivo_apos_ga: 460210.64
+  objetivo_final_apos_greedy: 464809.87
+  custo_estoque_parado_final: 120824.22
+  margem_caixa_sobre_receita: 0.2487
+  estoque_inicial: 5563
+  estoque_remanescente: 1055
+  meta_caixa_90d: 504078.19
+  meta_atingida: True
+  folga_meta: 81555.9
+  divida_total_90d: 411737.16
+  cobertura_divida: 1.4223
+  orcamento_promocional: 83891.28
+  orcamento_usado: 25134.2
+  uso_orcamento_percentual: 29.96
+  gap_medio_ga_b_subconjunto_percentual: 0.0

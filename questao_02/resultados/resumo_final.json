@@ -1,0 +1,50 @@
+{
+  "grupo": "G05",
+  "seed": 5014,
+  "id_instancia": "da6b429055d1",
+  "integridade_ok": true,
+  "parametros": {
+    "choque_preco_concorrente": 0.0,
+    "ajuste_custo_logistico": 1.0,
+    "ajuste_orcamento": 1.0,
+    "ajuste_dividas": 1.0,
+    "skus_removidos": []
+  },
+  "lambda": 1.0,
+  "slots_semana": 5,
+  "cenarios_construcao": 2000,
+  "cenarios_validacao": 5000,
+  "caixa_inicial": 27285.86,
+  "dividas": {
+    "4": 55417.61,
+    "8": 71581.08,
+    "12": 103908.02
+  },
+  "orcamento_promocional_semanal": 4213.76,
+  "limite_risco_falha": 0.1,
+  "dentro_do_limite_de_risco": true,
+  "n_cenarios_falha": 0,
+  "skus_representativos": [
+    "Q2-023",
+    "Q2-018",
+    "Q2-006",
+    "Q2-008"
+  ],
+  "tempo_mc_construcao_s": 0.28519429999869317,
+  "tempo_dp_greedy_s": 0.18772109999554232,
+  "P_pagar_semana_4": 1.0,
+  "P_pagar_semana_8": 1.0,
+  "P_pagar_semana_12": 1.0,
+  "P_pagar_todas": 1.0,
+  "P_falha": 0.0,
+  "caixa_operacional_medio": 462506.561836482,
+  "caixa_operacional_P5": 449885.6846180798,
+  "saldo_final_medio": 258885.71183648196,
+  "saldo_final_P5": 246264.83461807977,
+  "folga_minima_nos_prazos_P5": 155057.80419734915,
+  "margem_caixa_sobre_receita": 0.24398625658379963,
+  "receita_media": 1895625.4680583999,
+  "gasto_promocional_medio": 9595.014881000001,
+  "estoque_final_medio": 946.9822,
+  "estoque_inicial": 4165
+}
